@@ -4,6 +4,7 @@
 }
 
 @font-face {
+  font-family: PSL;
   src: url("./assets/fonts/PSL168SP.TTF");
 }
 
@@ -21,24 +22,38 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  aligh-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar #logo {
   width: 80px;
-  height: 90px;
+  height: 88px;
+  border-radius: 4px;
+}
+
+.navbar h1 {
+  font-family: PSL;
+  font-size: 56px;
+  color: #ffffff;
 }
 
 .navbar .menu-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .navbar .menu-bar li {
   list-style: none;
+  font-family: arial;
+  font-size: 16px;
+  color: #585858;
 }
 /*# sourceMappingURL=style.css.map */
