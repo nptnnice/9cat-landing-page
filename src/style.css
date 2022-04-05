@@ -628,6 +628,10 @@ h1, h2, h3, h4, h5, h6, p {
   width: 300px;
 }
 
+.service-head {
+  margin-top: 200px;
+}
+
 .service-head h1 {
   font-family: arial;
   font-size: 56px;
