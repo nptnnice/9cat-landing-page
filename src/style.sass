@@ -33,9 +33,36 @@ h1,h2,h3,h4,h5,h6,p
     border-right: 20px solid transparent
     border-top: 36px solid #58585860
 
+.head-template
+    margin: auto
+    background-color: $grey
+    width: 750px
+    height: 88px
+    border-radius: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 24px
+    box-sizing: border-box
+    h1
+        font-family: arial
+        font-size: 64px
+        color: $lightorange
+    .triangle1
+        width: 0
+        height: 0
+        border-top: 24px solid transparent
+        border-bottom: 24px solid transparent
+        border-left: 32px solid $white
+    .triangle2
+        width: 0
+        height: 0
+        border-top: 24px solid transparent
+        border-bottom: 24px solid transparent
+        border-right: 32px solid $white
+
 .navbar
-    background-color: #fba653
-    opacity: 0.8
+    background-color: $orange
     height: 120px
     width: 100%
     box-sizing: border-box
@@ -227,26 +254,27 @@ h1,h2,h3,h4,h5,h6,p
         width: 880px
         margin: auto
         margin-top: 84px
-    .arrow-top
-        display: flex
-        justify-content: center
-        column-gap: 200px
-        margin-top: 80px
-        .triangle
-            @extend .triangle-down
-            border-left: 32px solid transparent
-            border-right: 32px solid transparent
-            border-top: 50px solid $coral
-    .arrow-bottom
-        display: flex
-        justify-content: center
-        column-gap: 200px
-        margin-top: 32px
-        .triangle
-            @extend .triangle-down
-            border-left: 32px solid transparent
-            border-right: 32px solid transparent
-            border-top: 50px solid $orange
+        margin-bottom: 80px
+    // .arrow-top
+    //     display: flex
+    //     justify-content: center
+    //     column-gap: 200px
+    //     margin-top: 80px
+    //     .triangle
+    //         @extend .triangle-down
+    //         border-left: 32px solid transparent
+    //         border-right: 32px solid transparent
+    //         border-top: 50px solid $coral
+    // .arrow-bottom
+    //     display: flex
+    //     justify-content: center
+    //     column-gap: 200px
+    //     margin-top: 32px
+    //     .triangle
+    //         @extend .triangle-down
+    //         border-left: 32px solid transparent
+    //         border-right: 32px solid transparent
+    //         border-top: 50px solid $orange
 
 .onestop
     background-color: $ivory
@@ -255,33 +283,11 @@ h1,h2,h3,h4,h5,h6,p
     margin-top: 100px
     padding-top: 80px
     .onestop-head
-        margin: auto
-        background-color: $grey
-        width: 750px
-        height: 88px
-        border-radius: 24px
-        display: flex
-        align-items: center
-        justify-content: space-between
-        padding: 0 24px
-        box-sizing: border-box
+        @extend .head-template
         h1
             font-family: arial
             font-size: 42px
             color: $coral
-        .triangle1
-            width: 0
-            height: 0
-            border-top: 24px solid transparent
-            border-bottom: 24px solid transparent
-            border-left: 32px solid $white
-        .triangle2
-            width: 0
-            height: 0
-            border-top: 24px solid transparent
-            border-bottom: 24px solid transparent
-            border-right: 32px solid $white
-
     .onestop-body
         margin: auto
         margin-top: 100px
@@ -410,33 +416,11 @@ h1,h2,h3,h4,h5,h6,p
                 width: 300px
 
 .service-head
-    margin: auto
-    margin-top: 200px
-    background-color: $grey
-    width: 750px
-    height: 88px
-    border-radius: 24px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding: 0 24px
-    box-sizing: border-box
+    @extend .head-template
     h1
         font-family: arial
         font-size: 56px
         color: $lightorange
-    .triangle1
-        width: 0
-        height: 0
-        border-top: 24px solid transparent
-        border-bottom: 24px solid transparent
-        border-left: 32px solid $white
-    .triangle2
-        width: 0
-        height: 0
-        border-top: 24px solid transparent
-        border-bottom: 24px solid transparent
-        border-right: 32px solid $white
 
 .service-body
     display: grid
@@ -493,7 +477,7 @@ h1,h2,h3,h4,h5,h6,p
     justify-content: center
     align-items: center
     column-gap: 160px
-    margin-top: 120px
+    margin-top: 140px
     .dev-text
         display: flex
         flex-direction: column
@@ -544,3 +528,134 @@ h1,h2,h3,h4,h5,h6,p
                     color: $white
             .container2
                 background-color: $lightorange
+
+.blognnews
+    margin-top: 240px
+    text-align: center
+    img
+        width: 300px
+
+.contactus
+    margin-top: 380px
+    display: flex
+    column-gap: 140px
+    justify-content: center
+    align-items: center
+    margin-bottom: 180px
+    .left
+        display: flex
+        column-gap: 36px
+        img
+            width: 160px
+            height: 148px
+        h1
+            font-family: arial
+            font-size: 64px
+            line-height: 72px
+            color: $coral
+    .right
+        font-family: PSL
+        font-size: 42px
+        line-height: 40px
+        color: $grey
+        width: 760px
+
+.arrow-top
+    display: flex
+    justify-content: center
+    column-gap: 200px
+    // margin-top: 180px
+    .triangle
+        @extend .triangle-down
+        border-left: 32px solid transparent
+        border-right: 32px solid transparent
+        border-top: 50px solid $coral
+.arrow-bottom
+    display: flex
+    justify-content: center
+    column-gap: 200px
+    margin-top: 32px
+    margin-bottom: 80px
+    .triangle
+        @extend .triangle-down
+        border-left: 32px solid transparent
+        border-right: 32px solid transparent
+        border-top: 50px solid $orange
+
+.team
+    background-color: $ivory
+    width: 100%
+    height: 840px
+    margin-top: 100px
+    padding-top: 80px
+    .team-head
+        @extend .head-template
+    .team-body
+        display: flex
+        column-gap: 240px
+        justify-content: center
+        align-items: center
+        margin-top: 100px
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            img
+                width: 300px
+            h2
+                font-family: arial
+                font-size: 42px
+                color: $coral
+                margin: 42px 0
+            p
+                font-family: PSL
+                font-size: 42px
+                line-height: 40px
+                color: $grey
+                width: 450px
+                text-align: center
+
+.contact-head
+    @extend .head-template
+    margin-top: 100px
+
+.contact-body
+    display: flex
+    justify-content: center
+    column-gap: 240px
+    margin-top: 80px
+    .contact-container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        img
+            width: 240px
+            height: 240px
+        .container
+            display: flex
+            column-gap: 36px
+            justify-content: center
+            align-items: center
+            margin: 40px 0
+            img
+                width: 100px
+                height: 100px
+        p
+            font-family: arial
+            font-size: 24px
+            text-align: center
+            color: $grey
+    .community
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        h2
+            font-family: arial
+            font-size: 42px
+            color: $coral
+        img
+            width: 220px
+            margin-top: 100px
