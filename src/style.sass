@@ -18,7 +18,7 @@ $coral: #f18c70
 
 body
     margin: 0
-    background-color: $ivory
+    background-color: $white
 
 h1,h2,h3,h4,h5,h6,p
     margin: 0
@@ -77,6 +77,7 @@ h1,h2,h3,h4,h5,h6,p
             flex-direction: column
             align-items: center
             row-gap: 10px
+            text-align: center
             #cube
                 width: 56px
                 filter: drop-shadow(0px 4px 2px rgba(0,0,0,0.5))
@@ -247,88 +248,93 @@ h1,h2,h3,h4,h5,h6,p
             border-right: 32px solid transparent
             border-top: 50px solid $orange
 
-.onestop-head
-    margin: auto
-    margin-top: 150px
-    background-color: $grey
-    width: 750px
-    height: 88px
-    border-radius: 24px
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding: 0 24px
-    box-sizing: border-box
-    h1
-        font-family: arial
-        font-size: 42px
-        color: $coral
-    .triangle1
-        width: 0
-        height: 0
-        border-top: 24px solid transparent
-        border-bottom: 24px solid transparent
-        border-left: 32px solid $white
-    .triangle2
-        width: 0
-        height: 0
-        border-top: 24px solid transparent
-        border-bottom: 24px solid transparent
-        border-right: 32px solid $white
-
-.onestop-body
-    margin: auto
+.onestop
+    background-color: $ivory
+    width: 100%
+    height: 1240px
     margin-top: 100px
-    display: grid
-    grid-template-rows: 1fr 1fr
-    grid-template-columns: 1fr 1fr
-    text-align: center
-    grid-row-gap: 72px
-    grid-column-gap: 215px
-    width: 1015px
-    position: relative
-    .container1, .container2
-        background-color: $white
-        width: 400px
-        height: 420px
+    padding-top: 80px
+    .onestop-head
+        margin: auto
+        background-color: $grey
+        width: 750px
+        height: 88px
         border-radius: 24px
-        border: 4px solid $grey
         display: flex
-        flex-direction: column
         align-items: center
-        filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.4))
-        img
-            width: 220px
-            padding-top: 32px
-        h2
-            margin-top: 56px
-            background-color: $orange
-            width: 360px
-            height: 80px
-            border-radius: 24px
+        justify-content: space-between
+        padding: 0 24px
+        box-sizing: border-box
+        h1
             font-family: arial
-            font-size: 32px
-            color: $grey
+            font-size: 42px
+            color: $coral
+        .triangle1
+            width: 0
+            height: 0
+            border-top: 24px solid transparent
+            border-bottom: 24px solid transparent
+            border-left: 32px solid $white
+        .triangle2
+            width: 0
+            height: 0
+            border-top: 24px solid transparent
+            border-bottom: 24px solid transparent
+            border-right: 32px solid $white
+
+    .onestop-body
+        margin: auto
+        margin-top: 100px
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        text-align: center
+        grid-row-gap: 72px
+        grid-column-gap: 215px
+        width: 1015px
+        position: relative
+        .container1, .container2
+            background-color: $white
+            width: 400px
+            height: 420px
+            border-radius: 24px
+            border: 4px solid $grey
             display: flex
+            flex-direction: column
             align-items: center
-            justify-content: center
-    .container2
-        h2
-            height: 104px
-            margin-top: 36px
-    .arrow1, .arrow2
-        display: flex
-        flex-direction: column
-        align-items: center
-        position: absolute
-        left: -64px
-        .triangle
-            @extend .triangle-down
-            border-top: 36px solid #58585860
-            margin-top: 10px
-    .arrow2
-        right: -1210px
-        bottom: 0px
+            filter: drop-shadow(4px 8px 6px rgba(0,0,0,0.4))
+            img
+                width: 220px
+                padding-top: 32px
+            h2
+                margin-top: 56px
+                background-color: $orange
+                width: 360px
+                height: 80px
+                border-radius: 24px
+                font-family: arial
+                font-size: 32px
+                color: $grey
+                display: flex
+                align-items: center
+                justify-content: center
+        .container2
+            h2
+                height: 104px
+                margin-top: 36px
+        .arrow1, .arrow2
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: absolute
+            left: -64px
+            .triangle
+                @extend .triangle-down
+                border-top: 36px solid #58585860
+                margin-top: 10px
+        .arrow2
+            right: -1210px
+            bottom: 0px
 
 .about-head
     font-family: arial
@@ -342,7 +348,7 @@ h1,h2,h3,h4,h5,h6,p
     align-items: center
     justify-content: center
     margin: auto
-    margin-top: 144px
+    margin-top: 100px
 
 .about-body
     display: flex
@@ -402,3 +408,139 @@ h1,h2,h3,h4,h5,h6,p
         .step-item5
             h2
                 width: 300px
+
+.service-head
+    margin: auto
+    margin-top: 200px
+    background-color: $grey
+    width: 750px
+    height: 88px
+    border-radius: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 24px
+    box-sizing: border-box
+    h1
+        font-family: arial
+        font-size: 56px
+        color: $lightorange
+    .triangle1
+        width: 0
+        height: 0
+        border-top: 24px solid transparent
+        border-bottom: 24px solid transparent
+        border-left: 32px solid $white
+    .triangle2
+        width: 0
+        height: 0
+        border-top: 24px solid transparent
+        border-bottom: 24px solid transparent
+        border-right: 32px solid $white
+
+.service-body
+    display: grid
+    grid-template-rows: 720px 720px 720px
+    grid-template-columns: 960px 960px
+    text-align: center
+    justify-content: center
+    margin-top: 80px
+    .container1, .container2
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        img
+            width: 240px
+        h2
+            font-family: arial
+            font-size: 42px
+            color: $coral
+            margin: 42px 0
+        p
+            font-family: PSL
+            font-size: 42px
+            line-height: 40px
+            color: $grey
+            width: 480px
+    .container2
+        background-color: $ivory
+
+.nft-game
+    display: flex
+    background-color: #fba65399
+    align-items: center
+    justify-content: center
+    column-gap: 240px
+    width: 100%
+    height: 360px
+    img
+        width: 240px
+    h2
+        font-family: arial
+        font-size: 42px
+        color: $coral
+    p
+        font-family: PSL
+        font-size: 42px
+        line-height: 40px
+        color: $grey
+        margin-top: 56px
+        width: 780px
+
+.developer
+    display: flex
+    justify-content: center
+    align-items: center
+    column-gap: 160px
+    margin-top: 120px
+    .dev-text
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        h2
+            font-family: arial
+            font-size: 42px
+            color: $coral
+            margin: 42px 0
+        p
+            font-family: PSL
+            font-size: 42px
+            line-height: 40px
+            color: $grey
+            width: 420px
+        img
+            width: 240px
+    .dev-box
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        row-gap: 48px
+        .dev-flex
+            display: flex
+            column-gap: 48px
+            justify-content: center
+            align-items: center
+            .container1, .container2
+                width: 400px
+                height: 320px
+                background-color: $coral
+                display: flex
+                flex-direction: column
+                row-gap: 32px
+                justify-content: center
+                align-items: center
+                border-radius: 24px
+                img
+                    width: 360px
+                    height: 190px
+                    border-radius: 24px
+                h2
+                    font-family: arial
+                    font-size: 36px
+                    color: $white
+            .container2
+                background-color: $lightorange

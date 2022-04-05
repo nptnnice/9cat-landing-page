@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #58585860;
 }
 
-.triangle-down, .header .arrow-top .triangle, .header .arrow-bottom .triangle, .onestop-body .arrow1 .triangle, .onestop-body .arrow2 .triangle, .about-body .step-container .step-item1 .triangle1, .about-body .step-container .step-item1 .triangle2, .about-body .step-container .step-item2 .triangle1, .about-body .step-container .step-item2 .triangle2, .about-body .step-container .step-item3 .triangle1, .about-body .step-container .step-item3 .triangle2, .about-body .step-container .step-item4 .triangle1, .about-body .step-container .step-item4 .triangle2, .about-body .step-container .step-item5 .triangle1, .about-body .step-container .step-item5 .triangle2 {
+.triangle-down, .header .arrow-top .triangle, .header .arrow-bottom .triangle, .onestop .onestop-body .arrow1 .triangle, .onestop .onestop-body .arrow2 .triangle, .about-body .step-container .step-item1 .triangle1, .about-body .step-container .step-item1 .triangle2, .about-body .step-container .step-item2 .triangle1, .about-body .step-container .step-item2 .triangle2, .about-body .step-container .step-item3 .triangle1, .about-body .step-container .step-item3 .triangle2, .about-body .step-container .step-item4 .triangle1, .about-body .step-container .step-item4 .triangle2, .about-body .step-container .step-item5 .triangle1, .about-body .step-container .step-item5 .triangle2 {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 10px;
+  text-align: center;
 }
 
 .navbar .menu-bar li #cube {
@@ -385,9 +386,16 @@ h1, h2, h3, h4, h5, h6, p {
   border-top: 50px solid #fba653;
 }
 
-.onestop-head {
+.onestop {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 1240px;
+  margin-top: 100px;
+  padding-top: 80px;
+}
+
+.onestop .onestop-head {
   margin: auto;
-  margin-top: 150px;
   background-color: #585858;
   width: 750px;
   height: 88px;
@@ -406,13 +414,13 @@ h1, h2, h3, h4, h5, h6, p {
           box-sizing: border-box;
 }
 
-.onestop-head h1 {
+.onestop .onestop-head h1 {
   font-family: arial;
   font-size: 42px;
   color: #f18c70;
 }
 
-.onestop-head .triangle1 {
+.onestop .onestop-head .triangle1 {
   width: 0;
   height: 0;
   border-top: 24px solid transparent;
@@ -420,7 +428,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-left: 32px solid #ffffff;
 }
 
-.onestop-head .triangle2 {
+.onestop .onestop-head .triangle2 {
   width: 0;
   height: 0;
   border-top: 24px solid transparent;
@@ -428,7 +436,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-right: 32px solid #ffffff;
 }
 
-.onestop-body {
+.onestop .onestop-body {
   margin: auto;
   margin-top: 100px;
   display: -ms-grid;
@@ -444,7 +452,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
 }
 
-.onestop-body .container1, .onestop-body .container2 {
+.onestop .onestop-body .container1, .onestop .onestop-body .container2 {
   background-color: #ffffff;
   width: 400px;
   height: 420px;
@@ -464,12 +472,12 @@ h1, h2, h3, h4, h5, h6, p {
           filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.4));
 }
 
-.onestop-body .container1 img, .onestop-body .container2 img {
+.onestop .onestop-body .container1 img, .onestop .onestop-body .container2 img {
   width: 220px;
   padding-top: 32px;
 }
 
-.onestop-body .container1 h2, .onestop-body .container2 h2 {
+.onestop .onestop-body .container1 h2, .onestop .onestop-body .container2 h2 {
   margin-top: 56px;
   background-color: #fba653;
   width: 360px;
@@ -489,12 +497,12 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: center;
 }
 
-.onestop-body .container2 h2 {
+.onestop .onestop-body .container2 h2 {
   height: 104px;
   margin-top: 36px;
 }
 
-.onestop-body .arrow1, .onestop-body .arrow2 {
+.onestop .onestop-body .arrow1, .onestop .onestop-body .arrow2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,12 +517,12 @@ h1, h2, h3, h4, h5, h6, p {
   left: -64px;
 }
 
-.onestop-body .arrow1 .triangle, .onestop-body .arrow2 .triangle {
+.onestop .onestop-body .arrow1 .triangle, .onestop .onestop-body .arrow2 .triangle {
   border-top: 36px solid #58585860;
   margin-top: 10px;
 }
 
-.onestop-body .arrow2 {
+.onestop .onestop-body .arrow2 {
   right: -1210px;
   bottom: 0px;
 }
@@ -537,7 +545,7 @@ h1, h2, h3, h4, h5, h6, p {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
-  margin-top: 144px;
+  margin-top: 100px;
 }
 
 .about-body {
@@ -648,5 +656,256 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about-body .step-container .step-item5 h2 {
   width: 300px;
+}
+
+.service-head {
+  margin: auto;
+  margin-top: 200px;
+  background-color: #585858;
+  width: 750px;
+  height: 88px;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.service-head h1 {
+  font-family: arial;
+  font-size: 56px;
+  color: #fdb875;
+}
+
+.service-head .triangle1 {
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-left: 32px solid #ffffff;
+}
+
+.service-head .triangle2 {
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 32px solid #ffffff;
+}
+
+.service-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 720px 720px 720px;
+      grid-template-rows: 720px 720px 720px;
+  -ms-grid-columns: 960px 960px;
+      grid-template-columns: 960px 960px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.service-body .container1, .service-body .container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-body .container1 img, .service-body .container2 img {
+  width: 240px;
+}
+
+.service-body .container1 h2, .service-body .container2 h2 {
+  font-family: arial;
+  font-size: 42px;
+  color: #f18c70;
+  margin: 42px 0;
+}
+
+.service-body .container1 p, .service-body .container2 p {
+  font-family: PSL;
+  font-size: 42px;
+  line-height: 40px;
+  color: #585858;
+  width: 480px;
+}
+
+.service-body .container2 {
+  background-color: #f5f5f5;
+}
+
+.nft-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fba65399;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 240px;
+          column-gap: 240px;
+  width: 100%;
+  height: 360px;
+}
+
+.nft-game img {
+  width: 240px;
+}
+
+.nft-game h2 {
+  font-family: arial;
+  font-size: 42px;
+  color: #f18c70;
+}
+
+.nft-game p {
+  font-family: PSL;
+  font-size: 42px;
+  line-height: 40px;
+  color: #585858;
+  margin-top: 56px;
+  width: 780px;
+}
+
+.developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 160px;
+          column-gap: 160px;
+  margin-top: 120px;
+}
+
+.developer .dev-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.developer .dev-text h2 {
+  font-family: arial;
+  font-size: 42px;
+  color: #f18c70;
+  margin: 42px 0;
+}
+
+.developer .dev-text p {
+  font-family: PSL;
+  font-size: 42px;
+  line-height: 40px;
+  color: #585858;
+  width: 420px;
+}
+
+.developer .dev-text img {
+  width: 240px;
+}
+
+.developer .dev-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 48px;
+}
+
+.developer .dev-box .dev-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 48px;
+          column-gap: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.developer .dev-box .dev-flex .container1, .developer .dev-box .dev-flex .container2 {
+  width: 400px;
+  height: 320px;
+  background-color: #f18c70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
+}
+
+.developer .dev-box .dev-flex .container1 img, .developer .dev-box .dev-flex .container2 img {
+  width: 360px;
+  height: 190px;
+  border-radius: 24px;
+}
+
+.developer .dev-box .dev-flex .container1 h2, .developer .dev-box .dev-flex .container2 h2 {
+  font-family: arial;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.developer .dev-box .dev-flex .container2 {
+  background-color: #fdb875;
 }
 /*# sourceMappingURL=style.css.map */
