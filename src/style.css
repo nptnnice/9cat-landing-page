@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar {
-  background-color: #fba65399;
+  background-color: #fba653;
+  opacity: 0.8;
   height: 120px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -45,8 +46,8 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .navbar .navbar-logo {
@@ -61,21 +62,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar .navbar-logo #logo {
-  width: 88px;
-  height: 100px;
-  border-radius: 4px;
+  width: 104px;
+  border-radius: 8px;
 }
 
 .navbar .navbar-logo #cube {
-  width: 100px;
+  width: 88px;
+  -webkit-filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.5));
 }
 
-.navbar h1 {
+.navbar .navbar-logo h1 {
   font-family: PSL;
-  font-size: 40px;
+  font-size: 52px;
+  line-height: 52px;
   text-align: center;
   color: #ffffff;
-  width: 360px;
 }
 
 .navbar .menu-bar {
@@ -106,41 +108,53 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar .menu-bar li #cube {
-  width: 60px;
+  width: 56px;
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
 }
 
 .partner {
   margin-top: 600px;
-  background-color: #fba65399;
+  background-color: #fba653;
+  opacity: 0.8;
   height: 180px;
   width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .partner h1 {
   font-family: arial;
   font-size: 40px;
+  line-height: 52px;
   color: #ffffff;
   text-align: center;
-  padding-top: 8px;
-  margin-bottom: 10px;
+  padding-top: 4px;
+  margin-bottom: 8px;
 }
 
 .partner .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 72px;
-          column-gap: 72px;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
+  width: 100%;
+  height: 108px;
+  overflow: hidden;
 }
 
 .partner .carousel img {
   width: 100px;
+  height: 100px;
+  -webkit-filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.5));
 }
 
 .footer {
   margin-top: 0;
-  background-color: #58585890;
-  height: 120px;
+  background-color: #8D8D8D;
+  height: 140px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,13 +165,13 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 24px;
-          column-gap: 24px;
+  -webkit-column-gap: 26px;
+          column-gap: 26px;
 }
 
 .footer .form {
-  width: 320px;
-  height: 100px;
+  width: 368px;
+  height: 104px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -167,7 +181,7 @@ h1, h2, h3, h4, h5, h6, p {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  grid-gap: 4px;
+  grid-gap: 8px;
   align-items: center;
 }
 
@@ -175,8 +189,8 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  width: 160px;
-  height: 24px;
+  width: 180px;
+  height: 32px;
   border: 2px solid #585858;
   border-radius: 8px;
   padding-left: 8px;
@@ -186,8 +200,8 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  width: 160px;
-  height: 24px;
+  width: 180px;
+  height: 32px;
   border: 2px solid #585858;
   border-radius: 8px;
   padding-left: 8px;
@@ -201,20 +215,20 @@ h1, h2, h3, h4, h5, h6, p {
           box-sizing: border-box;
   background-color: #ffffff;
   width: 100%;
-  height: 72px;
+  height: 64px;
   border: 2px solid #585858;
   border-radius: 8px;
   padding-left: 8px;
 }
 
 .footer .foot-text {
-  width: 180px;
+  width: 254px;
   text-align: center;
 }
 
 .footer .foot-text h1 {
   font-family: arial;
-  font-size: 24px;
+  font-size: 32px;
   color: #fdb875;
   text-align: center;
 }
@@ -230,24 +244,26 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
+  -webkit-column-gap: 14px;
+          column-gap: 14px;
 }
 
 .footer .foot-text .welcome #cube {
-  width: 40px;
+  width: 56px;
+  -webkit-filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
 }
 
 .footer .foot-text .welcome h2 {
   font-family: arial;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
+  line-height: 36px;
   text-align: left;
 }
 
 .footer #logo {
-  width: 96px;
-  height: 100px;
-  border-radius: 4px;
+  width: 110px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

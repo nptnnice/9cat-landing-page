@@ -3,8 +3,7 @@ import Cube from "../assets/images/cube.png";
 //import reactrouterdom
 import { useNavigate } from "react-router-dom";
 
-export default () =>
-{
+export default () => {
   const navigate = useNavigate();
 
   const onChangePage = (page) => {
@@ -17,8 +16,8 @@ export default () =>
         <div className="navbar-logo">
           <img src={Logo} alt="logo" id="logo" />
           <img src={Cube} alt="cube" id="cube" />
+          <h1>"ปราดเปรียวบนโลกบล็อกเชน ดูแลจบครบในที่เดียว"</h1>
         </div>
-        <h1>"ปราดเปรียวบนโลกบล็อกเชน ดูแลจบครบในที่เดียว"</h1>
         <ul className="menu-bar">
           <li onClick={() => onChangePage("/")}>
             <img src={Cube} alt="cube" id="cube" />
@@ -41,4 +40,3 @@ export default () =>
     </div>
   );
 };
-

@@ -15,6 +15,8 @@ export default () => {
             <img src={Cube} alt="cube" id="cube" />
             <img src={Cube} alt="cube" id="cube" />
             <img src={Cube} alt="cube" id="cube" />
+            <img src={Cube} alt="cube" id="cube" />
+            <img src={Cube} alt="cube" id="cube" />
           </div>
       </div>
       <div className="footer">
