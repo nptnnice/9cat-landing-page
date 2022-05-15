@@ -23,7 +23,7 @@ export default () => {
       <div className="service-body">
         <div className="container1">
           <img src={Marketing} alt="marketing" />
-          <h2>Margeting</h2>
+          <h2>Marketing</h2>
           <p>
             เราอยู่เบื้องหลังความสำเร็จของโปรเจคหลายโปรเจค
             เราสามารถช่วยผลักดันการตลาดและคอมมิวนิตี้ให้ถึงเป้าหมายได้
@@ -33,7 +33,7 @@ export default () => {
           <img src={Consult} alt="consult" />
           <h2>Consult</h2>
           <p>
-            Margeting Consult<br></br>Tokenomic design
+            Marketing Consult<br></br>Tokenomic design
           </p>
         </div>
         <div className="container2">

@@ -1,11 +1,13 @@
-import React from "react";
-import Logo from "../assets/images/logocrop.jpg";
-import Focus from "../assets/images/target.png";
-import Decentralized from "../assets/images/decentralized.png";
-import Blockchain from "../assets/images/blockchain.png";
-import Coin from "../assets/images/dollar.png";
+import React from "react"
+import Logo from "../assets/images/logocrop.jpg"
+import Focus from "../assets/images/target.png"
+import Decentralized from "../assets/images/decentralized.png"
+import Blockchain from "../assets/images/blockchain.png"
+import Coin from "../assets/images/dollar.png"
+import { Center } from '@chakra-ui/react'
 
-export default () => {
+export default () =>
+{
   return (
     <div>
       <div className="header">
@@ -14,11 +16,9 @@ export default () => {
           <h1>9 CAT DIGITAL</h1>
         </div>
         <p>
-          ผู้ให้บริการด้านการพัฒนาโปรเจคบล็อคเชนโซลูชั่นแบบ One-stop-service
-          ที่เดียวจบ ดูแลครบวงจร
-          โดยการรวมตัวของผู้เชี่ยวชาญในแต่ละด้านไม่ว่าจะเป็น ด้านการตลาด
-          ด้านการพัฒนา (Development) ไม่ว่าจะเป็นระบบ Token, ระบบ NFT และ Smart
-          Contract ในแบบตามที่ต้องการ
+          ผู้ให้บริการด้านการพัฒนาโปรเจคบล็อคเชนโซลูชั่นแบบ One-stop-service ที่เดียวจบ ดูแลครบวงจร
+          โดยผู้เชี่ยวชาญในแต่ละด้าน ไม่ว่าจะเป็น ด้านการตลาด ด้านการพัฒนา (Development)
+          ทั้ง ระบบ Tokenomic, ระบบ NFT และ Smart Contract ในแบบตามที่ต้องการ
           และทางบริษัทยังมีประสบการณ์ในการพัฒนาและดูแล Project ในโลกคริปโตมากมาย
         </p>
         <div className="arrow-top">
@@ -34,7 +34,7 @@ export default () => {
       <div className="onestop">
         <div className="onestop-head">
           <div className="triangle1"></div>
-          <h1>ONE-STOP-SERVICE</h1>
+          <h1>INVESTMENT FOCUS</h1>
           <div className="triangle2"></div>
         </div>
         <div className="onestop-body">
@@ -43,23 +43,25 @@ export default () => {
             <div className="triangle"></div>
             <div className="triangle"></div>
           </div>
-          <div className="container1">
-            <img src={Focus} alt="focus" />
-            <h2>Investment Focus</h2>
-          </div>
           <div className="container2">
-            <img src={Decentralized} alt="decentralized" />
+            <Center>
+              <img src={Decentralized} alt="decentralized" />
+            </Center>
             <h2>
               Decentralized<br></br> Finance
             </h2>
           </div>
           <div className="container2">
-            <img src={Blockchain} alt="blockchain" />
+            <Center>
+              <img src={Blockchain} alt="blockchain" />
+            </Center>
             <h2>Blockchain Infrastructure</h2>
           </div>
-          <div className="container1">
-            <img src={Coin} alt="coin" />
-            <h2>NFT Game</h2>
+          <div className="container2">
+            <Center>
+              <img src={Coin} alt="coin" />
+            </Center>
+            <h2>GameFi</h2>
           </div>
           <div className="arrow2">
             <div className="triangle"></div>
@@ -99,5 +101,5 @@ export default () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

@@ -1,17 +1,17 @@
-import React from "react";
-import Logocrop from "../assets/images/logocrop.jpg";
-import Logo from "../assets/images/logo.jpg";
-import Technicals from "../assets/images/technicals.png";
-import Business from "../assets/images/business.png";
-import Facebook from "../assets/images/facebook.png";
-import Twitter from "../assets/images/twitter.png";
-import Email from "../assets/images/email.png";
-import Coming from "../assets/images/comingsoon.png";
-
-export default () => {
+import React from "react"
+import Logocrop from "../assets/images/logocrop.jpg"
+import Logo from "../assets/images/logo.png"
+import Technicals from "../assets/images/technicals.png"
+import Business from "../assets/images/business.png"
+import Facebook from "../assets/images/facebook.png"
+import Email from "../assets/images/email.png"
+import Coming from "../assets/images/comingsoon.png"
+import {Box} from "@chakra-ui/react"
+export default () =>
+{
   return (
     <div>
-      <div className="contactus">
+      {/* <div className="contactus">
         <div className="left">
           <img src={Logocrop} alt="logocrop" />
           <h1>
@@ -25,8 +25,8 @@ export default () => {
           เพื่อสร้างความผูกพันให้กับแบรนด์หรือผลิตภัณฑ์ของลูกค้า
           ทางเรามีประสบการณ์นำพาโครงการให้ประสบความสำเร็จมาแล้วหลายโครงการ
         </div>
-      </div>
-      <div className="arrow-top">
+      </div> */}
+      {/* <div className="arrow-top">
         <div className="triangle"></div>
         <div className="triangle"></div>
         <div className="triangle"></div>
@@ -34,8 +34,8 @@ export default () => {
       <div className="arrow-bottom">
         <div className="triangle"></div>
         <div className="triangle"></div>
-      </div>
-      <div className="team">
+      </div> */}
+      {/* <div className="team">
         <div className="team-head">
           <div className="triangle1"></div>
           <h1>TEAM</h1>
@@ -58,7 +58,8 @@ export default () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Box marginTop='200px'/>
       <div className="contact-head">
         <div className="triangle1"></div>
         <h1>CONTACT</h1>
@@ -66,19 +67,21 @@ export default () => {
       </div>
       <div className="contact-body">
         <div className="contact-container">
-            <img src={Logo} alt="logo" />
-            <div className="container">
-                <img src={Facebook} alt="facebook" />
-                <img src={Twitter} alt="twitter" />
-                <img src={Email} alt="email" />
-            </div>
-            <p>contact@9catdigital.com</p>
+          <img src={Logo} alt="logo" />
+          <div className="container">
+            <a href='https://www.facebook.com/9catdigital/' target='_blank'>
+              <img src={Facebook} alt="facebook" />
+            </a>
+            <a href='mailto:contact@9catdigital.com' target='_blank'>
+              <img src={Email} alt="email" />
+            </a>
+          </div>
         </div>
         <div className="community">
-            <h2>COMMUNITY</h2>
-            <img src={Coming} alt="comingsoon" />
+          <h2>COMMUNITY</h2>
+          <img src={Coming} alt="comingsoon" />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
