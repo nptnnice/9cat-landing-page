@@ -1656,6 +1656,7 @@ h1, h2, h3, h4, h5, h6, p {
 .blognnews {
   margin-top: 240px;
   text-align: center;
+  height: 280px;
 }
 
 .blognnews img {
@@ -1696,6 +1697,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: auto;
   margin-top: 260px;
   margin-bottom: 100px;
+  height: 300px;
 }
 
 .contactus .left {
