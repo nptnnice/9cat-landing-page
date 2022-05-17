@@ -65,7 +65,7 @@ export default () =>
   }, [isSubmitted])
 
   return (
-    <div>
+    <div className='fixedBottom'>
       <div className="partner">
         <h1>PARTNER</h1>
         <div className="carousel">

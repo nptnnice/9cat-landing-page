@@ -60,26 +60,28 @@ export default () =>
           </div>
         </div>
       </div> */}
-      <div className="contact-head">
-        <div className="triangle1"></div>
-        <h1>CONTACT</h1>
-        <div className="triangle2"></div>
-      </div>
-      <div className="contact-body">
-        <div className="contact-container">
-          <img src={Logo} alt="logo" />
-          <div className="container">
-            <a href='https://www.facebook.com/9catdigital' target='_blank'>
-              <img src={Facebook} alt="facebook" />
-            </a>
-            <a href='mailto:contact@9catdigital.com' target='_blank'>
-              <img src={Email} alt="email" />
-            </a>
-          </div>
+      <div className='contactHeight'>
+        <div className="contact-head">
+          <div className="triangle1"></div>
+          <h1>CONTACT</h1>
+          <div className="triangle2"></div>
         </div>
-        <div className="community">
-          <h2>COMMUNITY</h2>
-          <img src={Coming} alt="comingsoon" />
+        <div className="contact-body">
+          <div className="contact-container">
+            <img src={Logo} alt="logo" />
+            <div className="container">
+              <a href='https://www.facebook.com/9catdigital' target='_blank'>
+                <img src={Facebook} alt="facebook" />
+              </a>
+              <a href='mailto:contact@9catdigital.com' target='_blank'>
+                <img src={Email} alt="email" />
+              </a>
+            </div>
+          </div>
+          <div className="community">
+            <h2>COMMUNITY</h2>
+            <img src={Coming} alt="comingsoon" />
+          </div>
         </div>
       </div>
     </div>
